@@ -1,0 +1,12 @@
+{
+  "generator-lb": {
+    "name": "facetrack",
+    "features": [
+      "includeFEFramework"
+    ],
+    "feFramework": "includeBootstrap",
+    "sassCompilator": "libSass",
+    "multiLanguage": true,
+    "dataFormat": "yaml"
+  }
+}

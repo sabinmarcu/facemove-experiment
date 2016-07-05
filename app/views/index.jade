@@ -1,0 +1,35 @@
+extends layouts/_default
+
+block content
+    .bg
+        img(src="images/bucharest.jpg")
+    .debug
+        #viewport
+            video(id="video" width="320" height="240" preload autoplay loop muted)
+            canvas(id="canvas" width="320" height="240")
+    .text
+        article
+            section
+                label(for="mouse")
+                    input(type="radio" name="input" value="mousetrack" id="mouse")
+                    span.radio
+                    | Move the page with your mouse cursor.
+                label(for="face")
+                    input(type="radio" name="input" value="facetrack" id="face")
+                    span.radio
+                    | Move the page with yo' face!
+
+        article
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        article
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

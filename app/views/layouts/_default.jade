@@ -1,0 +1,41 @@
+include ../helpers/_language
+
+doctype html
+<!--[if lt IE 7]>            <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>                 <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>                 <html class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>                 <html class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9]>            <html class="no-js gt-ie9"> <![endif]-->
+<!--[if !IE] <![IGNORE[--><!--[IGNORE[]]--> <html class="no-js noie">
+head
+    meta(charset="utf-8")
+    title facetrack
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="shortcut icon", href="/favicon.ico")
+    //- build:css /styles/vendor.min.css -->
+    //- endbuild -->
+    //- build:css({.tmp,app}) /styles/main.min.css -->
+    // bower:css
+    // endbower
+    link(rel="stylesheet", href="/styles/main.css")
+    //- endbuild -->
+
+body
+
+block content
+//- build:js(./app/) /scripts/vendor.min.js -->
+// bower:js
+script(src='../bower_components/jquery/dist/jquery.js')
+script(src='../bower_components/bootstrap-sass/assets/javascripts/bootstrap.js')
+// endbower
+//- endbuild -->
+//- build:js(.tmp) /scripts/plugins.min.js -->
+//- endbuild -->
+//- build:js(.tmp) /scripts/main.min.js -->
+script(src="/scripts/tracking/tracking.js")
+script(src="/scripts/tracking/data/face.js")
+script(src="/scripts/main.js")
+//- endbuild -->
+
+| </html>
